@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PALPOWER (U) LIMITED — electrical engineering, powerline construction, domestic and industrial installations, solar PV, CCTV and electrical consultancy in Uganda.">
+<title>PALPOWER (U) LIMITED | Build Uganda! Light Uganda!</title>
+<style>
+:root{--blue:#063b9f;--blue2:#0b5bd3;--red:#df1f26;--ink:#10213f;--muted:#5e6b80;--light:#f4f7fc;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 18px #0002}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--blue);font-size:1.05rem}
+.brand img{width:50px;height:50px;border-radius:50%;object-fit:cover}
+.brand em{font-style:normal;color:var(--red)}
+nav{display:flex;gap:20px;font-weight:700;font-size:.9rem}
+nav a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:12px 19px;border-radius:7px;font-weight:800}
+.btn.blue{background:var(--blue)}
+.hero{min-height:650px;display:grid;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,#041f56ee,#063b9fbb 48%,#0004),url('project-1.jpg') center/cover}
+.hero-inner{padding:85px 0;color:#fff;max-width:850px}
+.eyebrow{font-weight:900;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:10px}
+h1{font-size:clamp(2.7rem,6vw,5.5rem);line-height:1.02;margin-bottom:20px}
+h1 span{color:#ff5056}
+.hero p{font-size:1.25rem;max-width:720px;margin-bottom:28px;color:#eef4ff}
+.slogan{font-size:1.7rem;font-weight:900;letter-spacing:.5px;margin:22px 0}.slogan span{color:#ff5056}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:78px 0}
+.section-head{max-width:780px;margin:0 auto 42px;text-align:center}
+.section-head .eyebrow{color:var(--red)}
+.section-head h2{font-size:2.4rem;color:var(--blue);line-height:1.15;margin:8px 0 12px}
+.section-head h2 span{color:var(--red)}
+.section-head p{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
+.lead{font-size:1.08rem;color:var(--muted)}
+.highlight{margin-top:25px;padding:25px;border-left:6px solid var(--red);background:var(--light)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border-radius:15px;padding:27px;box-shadow:0 8px 28px #10213f12;border-top:5px solid var(--blue)}
+.card:nth-child(even){border-top-color:var(--red)}
+.card h3{color:var(--blue);margin:8px 0}.card p{color:var(--muted)}
+.icon{font-size:2rem}
+.values{background:var(--light)}
+.value-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.value{padding:22px;background:#fff;text-align:center;border-radius:13px;font-weight:800;border-bottom:4px solid var(--red)}
+.profile{background:linear-gradient(135deg,var(--blue),#09265d);color:#fff}
+.profile-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}
+.profile-img{width:100%;height:430px;object-fit:cover;border-radius:20px;border:5px solid #ffffff33}
+.profile h2{font-size:2.3rem;margin-bottom:12px}.profile p{color:#e4ebff}
+.note{margin-top:18px;padding:14px 16px;border-radius:8px;background:#ffffff14;border:1px solid #ffffff2b;color:#e9efff}
+.hse{border:1px solid #dce4f2;border-left:7px solid var(--red);padding:30px;border-radius:12px}
+.hse ul{margin:18px 0 0 20px;color:var(--muted)}
+.projects{background:var(--light)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery figure{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 22px #10213f12}
+.gallery img{width:100%;height:260px;object-fit:cover;display:block}
+.gallery figcaption{padding:14px 16px;font-weight:800;color:var(--blue)}
+.equipment{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.equip{padding:22px;background:#fff;border-radius:12px;box-shadow:0 5px 18px #10213f10;border-left:4px solid var(--blue)}
+.contact{background:var(--blue);color:#fff}
+.contact .section-head h2{color:#fff}.contact .section-head p{color:#dce7ff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:#fff;color:var(--ink);padding:30px;border-radius:15px}
+.contact-item{margin:18px 0}.contact-item strong{color:var(--red)}.contact-item a{color:var(--blue);font-weight:800}
+.footer{background:#061738;color:#dbe5ff;padding:25px 0;text-align:center}
+.footer strong{color:#fff}.footer span{color:#ff5056}
+@media(max-width:850px){nav{display:none}.about-grid,.profile-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.value-grid{grid-template-columns:repeat(3,1fr)}.equipment{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.cards,.value-grid,.equipment,.gallery{grid-template-columns:1fr}section{padding:55px 0}.hero{min-height:600px}}
+</style>
+</head>
+<body>
+
+<header><div class="container nav">
+<a class="brand" href="#home"><img src="img/logo.jpg" alt="PALPOWER logo">PAL<em>POWER</em> (U) LIMITED</a>
+<nav><a href="#about">About</a><a href="#services">Services</a><a href="#values">Values</a><a href="#hse">HSE</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="tel:+256701292409">Call Us</a>
+</div></header>
+
+<section class="hero" id="home"><div class="container hero-inner">
+<div class="eyebrow">Electrical Engineering • Power • Energy • Security</div>
+<h1>PALPOWER <span>(U) LIMITED</span></h1>
+<p>Professional electrical and power solutions for homes, businesses, industries and communities across Uganda.</p>
+<div class="slogan">BUILD UGANDA! <span>LIGHT UGANDA!</span></div>
+<div class="actions"><a class="btn" href="#contact">Request a Service</a><a class="btn blue" href="https://wa.me/256701292409">WhatsApp Us</a></div>
+</div></section>
+
+<section id="about"><div class="container">
+<div class="section-head"><div class="eyebrow">Company Profile</div><h2>About the <span>Company</span></h2><p>A growing Ugandan electrical contractor focused on dependable, professional project delivery.</p></div>
+<div class="about-grid"><div>
+<p class="lead"><strong>PALPOWER (U) LIMITED</strong> provides electrical and power services with a commitment to safety, quality workmanship, reliability and customer satisfaction.</p>
+<div class="highlight"><strong>Company History</strong><p>PALPOWER was established to provide practical, reliable electrical solutions and to contribute to Uganda's development through professional power and electrical infrastructure services.</p></div>
+<p style="margin-top:18px;color:var(--muted)">As the company grows, this profile can be updated with the official incorporation date, registration number, TIN, memberships, certifications and major milestones.</p>
+</div>
+<div class="card"><div class="icon">🇺🇬⚡</div><h3>Our Commitment</h3><p>We aim to deliver safe, dependable and professionally executed electrical projects while supporting development and brighter communities in Uganda.</p></div></div>
+</div></section>
+
+<section class="values" id="values"><div class="container">
+<div class="section-head"><div class="eyebrow">Our Direction</div><h2>Vision, Mission & <span>Core Values</span></h2></div>
+<div class="cards" style="margin-bottom:28px">
+<div class="card"><div class="icon">🎯</div><h3>Vision</h3><p>To be a leading provider of trusted electrical and power solutions in Uganda.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Mission</h3><p>To deliver reliable power and electrical solutions that support growth and improve lives.</p></div>
+</div>
+<div class="value-grid">
+<div class="value">Safety</div><div class="value">Quality</div><div class="value">Integrity</div><div class="value">Reliability</div><div class="value">Customer Focus</div>
+</div>
+</div></section>
+
+
+<section id="services" class="values"><div class="container">
+<div class="section-head"><div class="eyebrow">What We Do</div><h2>Our <span>Services</span></h2></div>
+<div class="cards">
+<div class="card"><div class="icon">⚡</div><h3>Powerline Construction</h3><p>Construction and installation of overhead powerlines and distribution networks.</p></div>
+<div class="card"><div class="icon">🏠</div><h3>Domestic Electrical Installations</h3><p>Professional wiring and electrical installations for homes, flats and apartments.</p></div>
+<div class="card"><div class="icon">🏭</div><h3>Industrial Electrical Installations</h3><p>Electrical installations and solutions for factories, warehouses and industrial facilities.</p></div>
+<div class="card"><div class="icon">☀️</div><h3>Solar PV Installation</h3><p>Solar photovoltaic solutions for reliable, sustainable power generation.</p></div>
+<div class="card"><div class="icon">📹</div><h3>CCTV & Security Systems</h3><p>Security cameras and surveillance solutions for homes, businesses and institutions.</p></div>
+<div class="card"><div class="icon">🧰</div><h3>Electrical Consultancy</h3><p>Electrical advice, design, inspection, planning and project support.</p></div>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="section-head"><div class="eyebrow">Why PALPOWER</div><h2>Why Choose <span>PALPOWER?</span></h2></div>
+<div class="cards">
+<div class="card"><h3>Experienced Technical Team</h3><p>Skilled personnel focused on practical and professional project execution.</p></div>
+<div class="card"><h3>Quality Workmanship</h3><p>Attention to installation quality, neatness, reliability and performance.</p></div>
+<div class="card"><h3>Safety-First Approach</h3><p>Safety is treated as a core responsibility throughout project work.</p></div>
+<div class="card"><h3>Reliable Project Delivery</h3><p>Clear coordination and disciplined execution to keep projects moving.</p></div>
+<div class="card"><h3>Customer-Focused Service</h3><p>We listen to client requirements and aim for long-term relationships.</p></div>
+</div>
+</div></section>
+
+<section id="hse" class="values"><div class="container">
+<div class="section-head"><div class="eyebrow">HSE</div><h2>Health, Safety & Environment <span>Policy</span></h2></div>
+<div class="hse"><p>PALPOWER (U) LIMITED is committed to conducting its activities in a manner that protects employees, clients, communities, property and the environment.</p>
+<ul><li>Promote safe working practices and responsible electrical work.</li><li>Identify hazards and reduce risks before and during project activities.</li><li>Use appropriate personal protective equipment and safety procedures.</li><li>Maintain good housekeeping and responsible handling of materials and waste.</li><li>Encourage continuous safety awareness, training and improvement.</li></ul>
+</div>
+</div></section>
+
+<section id="projects" class="projects"><div class="container">
+<div class="section-head"><div class="eyebrow">Portfolio</div><h2>Projects <span>Portfolio</span></h2><p>Selected project and field-work photographs supplied for the PAL POWER website.</p></div>
+<div class="gallery">
+<figure><img src="img/trans.jpg" alt="Transformer and power installation"><figcaption>Transformer & Power Installation</figcaption></figure>
+<figure><img src="img/solar.jpg" alt="Solar lighting and CCTV system"><figcaption>Solar Lighting & CCTV</figcaption></figure>
+<figure><img src="img/control.jpg" alt="Electrical control panel"><figcaption>Electrical Control Panel</figcaption></figure>
+<figure><img src="img/work.jpg" alt="PAL POWER technician at work"><figcaption>Electrical Installation Work</figcaption></figure>
+<figure><img src="img/work2.jpg" alt="Electrical work during building construction"><figcaption>Building Electrical Installation</figcaption></figure>
+<figure><img src="img/tt.jpg" alt="Transformer installation work"><figcaption>Power Infrastructure</figcaption></figure>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="section-head"><div class="eyebrow">Capacity</div><h2>Equipment & <span>Resources</span></h2><p>Equipment and resource details can be expanded as your company inventory is provided.</p></div>
+<div class="equipment">
+<div class="equip"><strong>Electrical Installation Tools</strong><p>Professional hand and electrical installation tools.</p></div>
+<div class="equip"><strong>Testing & Measuring</strong><p>Electrical testing and measurement resources.</p></div>
+<div class="equip"><strong>Safety Equipment</strong><p>Appropriate PPE and site safety resources.</p></div>
+<div class="equip"><strong>Project Resources</strong><p>Materials, transport and field resources for project execution.</p></div>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="container">
+<div class="section-head"><div class="eyebrow">Get In Touch</div><h2>Contact <span>PAL POWER</span></h2><p>Let's discuss your next electrical, power, solar or security project.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-item"><strong>Phone</strong><br><a href="tel:+256701292409">0701 292 409</a> / <a href="tel:+256788599249">0788 599 249</a></div>
+<div class="contact-item"><strong>Email</strong><br><a href="mailto:palpowerug@gmail.com">palpowerug@gmail.com</a></div>
+<div class="contact-item"><strong>Postal Address</strong><br>P.O. Box 178797, Kampala</div>
+<div class="contact-item"><strong>Office</strong><br>Kampala, Kawanda — 100m along Senge Road</div>
+</div>
+<div class="contact-card">
+<h3 style="color:var(--blue);font-size:1.6rem">Company Information</h3>
+<p style="margin:12px 0;color:var(--muted)"><strong>Registration Number:</strong> To be provided</p>
+<p style="margin:12px 0;color:var(--muted)"><strong>TIN:</strong> To be provided</p>
+<p style="margin:12px 0;color:var(--muted)"><strong>Awards / Memberships / Certifications:</strong> To be provided</p>
+<a class="btn" href="https://wa.me/256701292409">Message on WhatsApp</a>
+</div>
+</div>
+</div></section>
+
+<footer class="footer"><div class="container"><strong>PALPOWER (U) LIMITED</strong> — Reliable Power • Brighter Future<br><span>BUILD UGANDA! LIGHT UGANDA!</span></div></footer>
+</body></html>
